@@ -25,12 +25,13 @@
 	</organization>
 
 	<properties>
-		<!-- versions -->
-		<spring.version>5.0.2.RELEASE</spring.version>
+		<jdk.version>1.8</jdk.version>
+		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.12</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://localhost:9000/</sonar.host.url>
-
+		<sonar.host.url>http:172.31.71.191:9000/</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
@@ -96,12 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://localhost:8085/landmarktechnologies/repository/flipkart-releases/</url>
+	      <url>http://172.31.70.155:8081/repository/tesla-web-app-releases/</url>
 	    </repository>
+		
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://localhost:8085/landmarktechnologies/repository/flipkart-snapshot/</url>
+	      <url>http://172.31.70.155:8081/repository/tesla-webapp-snapshots/</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	
